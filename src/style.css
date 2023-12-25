@@ -1,0 +1,203 @@
+/* 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Flex', sans-serif;
+*/
+
+body {
+  /* background-color: rgba(0, 0, 0, .3); */
+  background-color: rgb(0, 131, 151) !important;
+}
+
+.container-body {
+  position: absolute;
+  z-index: -1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .7);
+}
+
+/* Modal */
+
+.modal-content {
+  border-radius: 2px !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+  border: unset !important;
+}
+
+.modal-content .text-danger-modal {
+  font-size: 17px !important;
+  text-align: center !important;
+  font-family: 'Nunito', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.dropdown-menu .dropdown-item {
+  cursor: pointer !important;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 2px !important;
+  padding: 10px 20px !important;
+  color: white !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-size: 14px !important;
+  position: relative !important;
+  background-color: unset !important;
+  border: unset !important;
+  overflow: hidden !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2) !important;
+}
+
+.btn.btn-h {
+  background-color: unset !important;
+  box-shadow: unset !important;
+  color: rgba(0, 0, 0, 0.67) !important;
+  border: unset !important;
+}
+
+.btn span {
+  width: max-content !important;
+}
+
+.btn:hover span {
+  animation-name: span-btn-animation !important;
+  animation-duration: 1s !important;
+  animation-timing-function: ease-in-out !important;
+  animation-iteration-count: 1 !important;
+}
+
+@keyframes span-btn-animation {
+  0% {
+    margin-left: 0;
+    opacity: 1;
+  }
+
+  50% {
+    margin-left: 250%;
+    opacity: 0;
+  }
+
+  60% {
+    margin-left: -360%;
+  }
+
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+.btn:hover {
+  background-color: unset !important;
+  border: unset !important;
+}
+
+.btn.btn-primary {
+  background-color: rgba(0, 78, 141, 0.7) !important;
+  border: 1px rgba(0, 78, 141, 1) solid !important;
+}
+
+.btn.btn-secondary {
+  background-color: rgba(115, 115, 115, 0.7) !important;
+  border: 1px rgb(123, 123, 123) solid !important;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+  border-radius: 2px !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.form-control label,
+.form-control::placeholder {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* Form container */
+.container-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 700px;
+  padding: 50px 30px;
+  border-radius: 3px;
+  /* box-shadow: 0 0 25px rgba(13, 115, 198, 0.7); */
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  background-color: rgba(13, 115, 198, 0.6);
+}
+
+.container-form .title {
+  margin-bottom: 80px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 0 15px rgba(255, 255, 255, .4);
+}
+
+.container-form .footer {
+  color: rgba(255, 255, 255, .7);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+}
+
+.container-form .footer .router-link {
+  color: aquamarine;
+}
+
+/* Scrolls */
+
+/* Para navegadores webkit como Google Chrome y Safari */
+/* Barra de desplazamiento en el eje X */
+::-webkit-scrollbar {
+  height: 6px;
+  /* Altura de la barra de desplazamiento en el eje X */
+  width: 6px;
+  /* Ancho de la barra de desplazamiento en el eje Y */
+}
+
+/* Manija de la barra de desplazamiento en el eje X */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Color de fondo de la manija en el eje X */
+  border-radius: 6px;
+  /* Radio de esquinas de la manija en el eje X */
+}
+
+/* Manija de la barra de desplazamiento en el eje Y */
+::-webkit-scrollbar-thumb:horizontal {
+  background: #888;
+  /* Color de fondo de la manija en el eje Y */
+  border-radius: 6px;
+  /* Radio de esquinas de la manija en el eje Y */
+}
+
+/* Para navegadores Firefox */
+/* Barra de desplazamiento en el eje X */
+* {
+  scrollbar-width: thin;
+  /* Ancho de la barra de desplazamiento en el eje X */
+  scrollbar-color: #888 transparent;
+  /* Color de la barra de desplazamiento y fondo en el eje X */
+}
+
+/* Barra de desplazamiento en el eje Y */
+* {
+  scrollbar-width: thin;
+  /* Ancho de la barra de desplazamiento en el eje Y */
+  scrollbar-color: #888 transparent;
+  /* Color de la barra de desplazamiento y fondo en el eje Y */
+}
