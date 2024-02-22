@@ -1,0 +1,495 @@
+.input-modal-title {
+    border: unset;
+    font-size: 22px;
+    padding-left: 0;
+    margin-top: -10px;
+}
+
+.modal-content-section {
+    display: flex;
+    width: 100%;
+    padding: 20px 10px;
+    min-height: 550px;
+    overflow-y: scroll;
+}
+
+.modal-content-section .actions-modal {
+    width: 20%;
+}
+
+.actions-modal .actions {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 0;
+}
+
+.actions-modal .actions .title-actions {
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 900;
+}
+
+.actions-modal .actions .action {
+    margin-bottom: 7px;
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+    position: relative;
+    /* z-index: 999; */
+}
+
+.action .back-action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.actions-modal .actions .action .click-action {
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(205, 205, 205);
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 110%;
+    left: -150px;
+    z-index: 2000;
+}
+
+.actions-modal .actions .action .click-action .btn span {
+    font-size: 13px !important;
+    color: white;
+}
+
+.actions-modal .actions .action .click-action .form-control {
+    font-size: 13px;
+}
+
+.actions-modal .actions .action .click-action .btn {
+    padding: 7px 15px;
+}
+
+.action .click-action .close-action {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 1100;
+}
+
+.action .click-action .title-action-click {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.action .click-action .section-action {
+    font-size: 13px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.action .click-action .close-action svg {
+    width: 14px;
+    height: 14px;
+    color: black;
+}
+
+.actions-modal .actions .action svg {
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+.actions-modal .actions .action span {
+    font-size: 15px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: black;
+}
+
+.actions-modal .actions .action:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content-section .sections-modal {
+    margin-right: 10px;
+    /* display: flex; */
+    width: 80%;
+}
+
+.show-editor {
+    opacity: 1;
+    position: relative;
+    z-index: 100;
+}
+
+.hidde-editor {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.sections-modal .section-modal {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.section-modal .icon {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.section-modal .icon svg {
+    width: 28px;
+    height: 28px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.section-modal .section {
+    width: 95%;
+}
+
+.section-modal .section .information-task {
+    width: max-content;
+    display: block;
+    margin: 20px 0;
+}
+
+.section .information-task .title-information {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+}
+
+.section .information-task .information {
+    padding: 8px 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color .2s ease-in-out;
+    cursor: pointer;
+}
+
+.section .information-task .information:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.section .information-task .information svg {
+    color: rgba(0, 0, 0, 0.774);
+    margin-top: 1px;
+    margin-right: 10px;
+}
+
+.section .information-task .information p {
+    margin-bottom: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    opacity: .9;
+}
+
+.section-modal .section .description-task {
+    width: 99%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color .1s ease-in-out;
+}
+
+.section-modal .section .add-description {
+    width: 99%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color .1s ease-in-out;
+}
+
+.section-modal .section .add-description p {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.section-modal .section .add-description:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.section-modal .section .title-section {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+}
+
+.lists-tasks-container {
+    overflow-x: scroll;
+    padding: 20px 10px;
+    display: flex;
+    grid-gap: 20px;
+}
+
+.lists-tasks-container .add-list {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 12px;
+    max-height: 50px;
+    min-width: 175px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color .2s ease-in-out;
+}
+
+.lists-tasks-container .add-list:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lists-tasks-container .add-list svg {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.lists-tasks-container .add-list span {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.lists-tasks-container .list-task {
+    background-color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    width: 320px;
+    min-width: 320px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: max-content;
+}
+
+.list-task .title {
+    font-family: 'Nunito', sans-serif;
+    width: 250px;
+    font-weight: 600;
+    font-size: 17px !important;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: unset !important;
+    /* margin-left: -10px; */
+    padding-left: 3px;
+}
+
+.list-task .title:focus {
+    box-shadow: 0 0 5px rgb(13, 146, 255) !important;
+}
+
+.list-task .options {
+    position: absolute;
+    top: 10px;
+    right: 2px;
+}
+
+.list-task .options svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.list-task .add-task {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color .1s ease-in-out;
+    padding: 7px;
+    border-radius: 2px;
+}
+
+.list-task .add-task:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.list-task .add-task svg {
+    margin-top: 2px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.list-task .add-task span {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.list-task .tasks {
+    width: 100%;
+    max-height: 63vh;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+}
+
+.list-task .tasks .task-form:hover::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: unset;
+}
+
+.list-task .tasks .task {
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin: 10px 0;
+    min-height: 50px;
+    width: 98%;
+    /* overflow: hidden; */
+    position: relative;
+    transition: scale .1s ease-in-out;
+    /* z-index: 99; */
+}
+
+.list-task .tasks .task .back-task {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.list-task .tasks .task .edit-task {
+    position: absolute;
+    top: 7px;
+    z-index: 10;
+    right: 5px;
+    width: 33px;
+    height: 33px;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background-color .2s ease-in-out;
+    opacity: 0;
+}
+
+.list-task .tasks .task:hover .edit-task {
+    opacity: 1;
+}
+
+.list-task .tasks .task .edit-task svg {
+    width: 15px;
+    height: 15px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.list-task .tasks .task .edit-task:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.list-task .tasks .task::before {
+    opacity: 0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    border: 2px rgba(0, 0, 0, 0.7) solid;
+}
+
+.list-task .cancel-task {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 2px;
+    transition: background-color .2s ease-in-out;
+}
+
+.list-task .cancel:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.list-task .form-control {
+    border: unset;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    border-bottom: 1px rgba(0, 0, 0, 0.3) solid;
+    border-radius: 3px;
+}
+
+.list-task .form-control::placeholder {
+    font-family: 'Nunito', sans-serif;
+}
+
+.list-task .form-control:focus {
+    border: unset;
+    box-shadow: unset;
+    border-bottom: 1px rgba(0, 0, 0, 0.3) solid;
+    border-radius: 3px;
+}
+
+.list-task .tasks .task:hover::before {
+    opacity: 1;
+    /* scale: 1.03; */
+}
+
+.list-task .tasks .task:first-child {
+    margin-top: 20px;
+}
+
+.list-task .tasks .task .title-task {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.list-task .tasks .task .created-due-date {
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* right: 5px; */
+    margin-bottom: 0;
+    margin-top: 12px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 7px;
+    border-radius: 2px;
+    width: max-content;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.list-task .tasks .task .created-due-date svg {
+    color: rgba(0, 0, 0, 0.8);
+    width: 17px;
+    height: 17px;
+    margin-top: -2px;
+    margin-right: 6px;
+
+}

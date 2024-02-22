@@ -9,8 +9,8 @@ const store = useStore();
 const idNotify = ref(0);
 
 const credentials = ref({
-  name: '',
-  password: ''
+  name: 'prueba',
+  password: 'prueba123'
 });
 
 const submit = async () => {

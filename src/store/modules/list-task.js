@@ -2,7 +2,7 @@ import conecction from "../../conecction";
 const listTaskModule = {
     state: {
         connectionClass: new conecction(localStorage.getItem('token')),
-        lists: []
+        lists: {}
     },
     mutations: {
         setList(state, payload) {

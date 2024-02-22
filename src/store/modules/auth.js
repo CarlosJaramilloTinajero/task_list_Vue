@@ -31,6 +31,10 @@ const authModule = {
             } catch (error) {
                 console.log(error);
             }
+        },
+
+        async enter({ state }) {
+            state.conecctionClass.loadData('post', '/login-vue-project', { msg: 'Entraron al proyecto lista de tareas con Vue, Tu puedes.' }, true);
         }
     },
     getters: {}

@@ -1,11 +1,13 @@
 <script setup>
 import router from './router';
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import NavBar from './components/NavBar.vue';
 import Slider from './components/Slider.vue';
 import Footer from './components/Footer.vue';
+import { useStore } from 'vuex';
 
-const canShowNavbar = ref(['home']);
+const store = useStore();
+const canShowNavbar = ref(['home', 'task-archived', 'list-archived']);
 
 const showNavBar = computed(() => {
   const routerName = router.currentRoute.value.name;
@@ -13,6 +15,10 @@ const showNavBar = computed(() => {
 });
 
 const expandedSlider = ref(true);
+
+onMounted(() => {
+  store.dispatch('enter');
+});
 
 </script>
 
